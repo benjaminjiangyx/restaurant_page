@@ -1,5 +1,3 @@
-import AmericanoImage from "./americano.jpeg";
-
 function loadMenu() {
   const content = document.querySelector("#content");
 
@@ -37,17 +35,11 @@ function loadMenu() {
 
   // Example: Using a URL image (just set src to any image URL)
   const urlImage = document.createElement("img");
-  urlImage.src = "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500";
+  urlImage.src =
+    "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500";
   urlImage.alt = "Coffee shop";
   urlImage.style.maxWidth = "500px";
   content.appendChild(urlImage);
-
-  // You can still use local imported images too
-  const localImage = document.createElement("img");
-  localImage.src = AmericanoImage;
-  localImage.alt = "Americano coffee";
-  localImage.style.maxWidth = "300px";
-  content.appendChild(localImage);
 }
 
 export default loadMenu;
